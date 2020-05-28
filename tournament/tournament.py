@@ -1,3 +1,8 @@
+'''
+Take the league matches result and generate table with scores:
+MP - matches playes, W - win, D - draw, L - lose, P - points
+'''
+
 import operator
 
 league = [
@@ -9,12 +14,8 @@ league = [
             "Allegoric Alaskans;Courageous Californians;draw",
         ]
 
-'''
-Take the league matches result and generate table with scores:
-MP - matches playes, W - win, D - draw, L - lose, P - points
-'''
-
 def tally(league):
+
     result = ['{:31}| {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.format('Team', 'MP', ' W', ' D', ' L', 'P'), ]
 
     if league == None:
