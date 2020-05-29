@@ -24,5 +24,6 @@ def recite(start_verse, end_verse):
     for num in range(start_verse, end_verse + 1):
         result.append(lines[num])
         print (lines[num])
+    return result
 
 recite(3,5)
