@@ -7,8 +7,6 @@ class Robot:
 
     def __init__(self):
         self.name = self.new_name()
-        print('you created a new robot')
-
 
     def new_name(self):
         '''
@@ -19,7 +17,6 @@ class Robot:
         letter_part = ''.join(sample(letters, k=2))
         unique_name = letter_part + number_part
         self.taken_names.append(unique_name)
-
         return unique_name
 
     def reset(self):
@@ -33,11 +30,3 @@ class Robot:
             return self.name
         else:
             return self.name
-
-
-robotos = Robot()
-
-print(robotos.name)
-robotos.reset()
-
-print(robotos.name)
